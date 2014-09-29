@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Comp_Employee_SetUp.css"/>
+</head>
+<body>
+<div class="header">
+    <img class="home" src="WhiteHomeGrayBackground.jpg" alt=""/>
+    <div class="hs">
+        <h1>Employee Set Up</h1>
+        <h2>Company 1&nbsp;&nbsp;<p class="downArrow"> ></p></h2>
+        <h3>Department 1 &nbsp;&nbsp;<p class="downArrow smallDown"> ></p></h3>
+    </div>
+    <span class="plus">+</span>
+</div>
+
+<div class="info">
+    <input class="name" type="text" placeholder="Name"/>
+    <input class="email" type="text" placeholder="Email"/>
+    <input class="number" type="number" placeholder="Cellular"/>
+    <input class="altNumber" type="number" placeholder="Alt. Cellular"/>
+
+    <div id="newInput"></div>
+    <div id="plus" class="plus">+</div>
+    <div class="addAttribute">Add Attribute</div>
+
+    <div class="invitations">
+        <div class="emailInvite">
+            Send Email Invitation
+            <i class="fa fa-toggle-on"></i>
+        </div>
+        <div class="cellInvite">
+            Send Cellular Invitation
+            <i class="fa fa-toggle-on"></i>
+        </div>
+    </div>
+</div>
+
+<div class="space">
+    <br/>
+    <br/>
+</div>
+
+<div class="menu">
+    <div class="section companies">
+        <i class="fa fas fa-building-o companies"></i>
+        <p class="companies icon">Companies</p>
+    </div>
+    <div class="section">
+        <i class="fa fas fa-map-marker locations"></i>
+        <p class="locations icon">Locations</p>
+    </div>
+    <div class="section">
+        <i class="fa fas fa-suitcase departments"></i>
+        <p class="departments icon">Departments</p>
+    </div>
+    <div class="section">
+        <i class="fa fas fa-user employees"></i>
+        <p class="employees icon">Employees</p>
+    </div>
+    <div class="section">
+        <i class="fa fas fa-tasks tasks"></i>
+        <p class="tasks icon">Tasks</p>
+    </div>
+</div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function(){
+        var plus = document.getElementById('plus');
+
+        plus.addEventListener('click', function(){
+            var input = document.getElementById('newInput');
+            var newInput = document.createElement('input');
+            newInput.style.border = '1px solid #A3A3A3';
+            newInput.style.color = '#A3A3A3';
+            input.appendChild(newInput);
+        });
+    });
+
+</script>
+</body>
+</html>
